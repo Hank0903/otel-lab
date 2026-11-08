@@ -1,0 +1,48 @@
+2026-11-08T11:05:29.095Z	info	otelconftelemetry/tracer.go:47	Internal trace telemetry disabled	{"resource": {"service.instance.id": "25a158a9-b696-4a9d-93b6-2462eba1a797", "service.name": "otelcol", "service.version": "0.164.0"}}
+2026-11-08T11:05:29.098Z	info	service@v0.164.0/service.go:233	Starting otelcol...	{"resource": {"service.instance.id": "25a158a9-b696-4a9d-93b6-2462eba1a797", "service.name": "otelcol", "service.version": "0.164.0"}, "Version": "0.164.0", "NumCPU": 2}
+2026-11-08T11:05:29.098Z	info	extensions/extensions.go:43	Starting extensions...	{"resource": {"service.instance.id": "25a158a9-b696-4a9d-93b6-2462eba1a797", "service.name": "otelcol", "service.version": "0.164.0"}}
+2026-11-08T11:05:29.099Z	info	otlpreceiver@v0.164.0/otlp.go:120	Starting GRPC server	{"resource": {"service.instance.id": "25a158a9-b696-4a9d-93b6-2462eba1a797", "service.name": "otelcol", "service.version": "0.164.0"}, "otelcol.component.id": "otlp", "otelcol.component.kind": "receiver", "endpoint": "[::]:4317"}
+2026-11-08T11:05:29.099Z	info	service@v0.164.0/service.go:256	Everything is ready. Begin running and processing data.	{"resource": {"service.instance.id": "25a158a9-b696-4a9d-93b6-2462eba1a797", "service.name": "otelcol", "service.version": "0.164.0"}}
+2026-11-08T11:11:08.562Z	info	Traces	{"resource": {"service.instance.id": "25a158a9-b696-4a9d-93b6-2462eba1a797", "service.name": "otelcol", "service.version": "0.164.0"}, "otelcol.component.id": "debug", "otelcol.component.kind": "exporter", "otelcol.signal": "traces", "resource spans": 1, "spans": 2}
+2026-11-08T11:11:08.562Z	info	ResourceSpans #0
+Resource SchemaURL: 
+Resource attributes:
+     -> telemetry.sdk.language: Str(python)
+     -> telemetry.sdk.name: Str(opentelemetry)
+     -> telemetry.sdk.version: Str(1.45.2)
+     -> service.instance.id: Str(a439e998-106c-4c0f-8605-09c93ac6003a)
+     -> service.name: Str(a8-demo)
+ScopeSpans #0
+ScopeSpans SchemaURL: 
+InstrumentationScope a8.demo 
+Span #0
+    Trace ID       : beaa92fe852389cf1ba4f6bb611dd8ae
+    Parent ID      : aaaaa7bd52266f97
+    ID             : ef7c63fe0c6c81fa
+    Name           : charge-card
+    Kind           : Internal
+    Start time     : 2026-11-08 11:11:08.505201118 +0000 UTC
+    End time       : 2026-11-08 11:11:08.505280186 +0000 UTC
+    Status code    : Unset
+    Status message : 
+    DroppedAttributesCount: 0
+    DroppedEventsCount: 0
+    DroppedLinksCount: 0
+Attributes:
+     -> payment.amount: Int(120)
+Span #1
+    Trace ID       : beaa92fe852389cf1ba4f6bb611dd8ae
+    Parent ID      : 
+    ID             : aaaaa7bd52266f97
+    Name           : checkout
+    Kind           : Internal
+    Start time     : 2026-11-08 11:11:08.505095511 +0000 UTC
+    End time       : 2026-11-08 11:11:08.50532013 +0000 UTC
+    Status code    : Unset
+    Status message : 
+    DroppedAttributesCount: 0
+    DroppedEventsCount: 0
+    DroppedLinksCount: 0
+Attributes:
+     -> order.id: Str(A8-002)
+	{"resource": {"service.instance.id": "25a158a9-b696-4a9d-93b6-2462eba1a797", "service.name": "otelcol", "service.version": "0.164.0"}, "otelcol.component.id": "debug", "otelcol.component.kind": "exporter", "otelcol.signal": "traces"}
