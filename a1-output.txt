@@ -1,0 +1,61 @@
+paid
+{
+    "name": "charge-card",
+    "context": {
+        "trace_id": "0x903bdf47f4e164de625b7eec4d9aa02a",
+        "span_id": "0x1c40728b033348ad",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": "0xacafe68064d03108",
+    "start_time": "2026-11-08T11:00:30.225294Z",
+    "end_time": "2026-11-08T11:00:30.225318Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {
+        "payment.amount": 120
+    },
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.45.2",
+            "service.instance.id": "c0f0eb2c-3899-4c63-a33d-aad244a686fd",
+            "service.name": "a8-demo"
+        },
+        "schema_url": ""
+    }
+}
+{
+    "name": "checkout",
+    "context": {
+        "trace_id": "0x903bdf47f4e164de625b7eec4d9aa02a",
+        "span_id": "0xacafe68064d03108",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": null,
+    "start_time": "2026-11-08T11:00:30.225219Z",
+    "end_time": "2026-11-08T11:00:30.225635Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {
+        "order.id": "A8-001"
+    },
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.45.2",
+            "service.instance.id": "c0f0eb2c-3899-4c63-a33d-aad244a686fd",
+            "service.name": "a8-demo"
+        },
+        "schema_url": ""
+    }
+}
