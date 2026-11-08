@@ -1,0 +1,555 @@
+2026-11-08T11:05:29.095Z	info	otelconftelemetry/tracer.go:47	Internal trace telemetry disabled	{"resource": {"service.instance.id": "25a158a9-b696-4a9d-93b6-2462eba1a797", "service.name": "otelcol", "service.version": "0.164.0"}}
+2026-11-08T11:05:29.098Z	info	service@v0.164.0/service.go:233	Starting otelcol...	{"resource": {"service.instance.id": "25a158a9-b696-4a9d-93b6-2462eba1a797", "service.name": "otelcol", "service.version": "0.164.0"}, "Version": "0.164.0", "NumCPU": 2}
+2026-11-08T11:05:29.098Z	info	extensions/extensions.go:43	Starting extensions...	{"resource": {"service.instance.id": "25a158a9-b696-4a9d-93b6-2462eba1a797", "service.name": "otelcol", "service.version": "0.164.0"}}
+2026-11-08T11:05:29.099Z	info	otlpreceiver@v0.164.0/otlp.go:120	Starting GRPC server	{"resource": {"service.instance.id": "25a158a9-b696-4a9d-93b6-2462eba1a797", "service.name": "otelcol", "service.version": "0.164.0"}, "otelcol.component.id": "otlp", "otelcol.component.kind": "receiver", "endpoint": "[::]:4317"}
+2026-11-08T11:05:29.099Z	info	service@v0.164.0/service.go:256	Everything is ready. Begin running and processing data.	{"resource": {"service.instance.id": "25a158a9-b696-4a9d-93b6-2462eba1a797", "service.name": "otelcol", "service.version": "0.164.0"}}
+2026-11-08T11:11:08.562Z	info	Traces	{"resource": {"service.instance.id": "25a158a9-b696-4a9d-93b6-2462eba1a797", "service.name": "otelcol", "service.version": "0.164.0"}, "otelcol.component.id": "debug", "otelcol.component.kind": "exporter", "otelcol.signal": "traces", "resource spans": 1, "spans": 2}
+2026-11-08T11:11:08.562Z	info	ResourceSpans #0
+Resource SchemaURL: 
+Resource attributes:
+     -> telemetry.sdk.language: Str(python)
+     -> telemetry.sdk.name: Str(opentelemetry)
+     -> telemetry.sdk.version: Str(1.45.2)
+     -> service.instance.id: Str(a439e998-106c-4c0f-8605-09c93ac6003a)
+     -> service.name: Str(a8-demo)
+ScopeSpans #0
+ScopeSpans SchemaURL: 
+InstrumentationScope a8.demo 
+Span #0
+    Trace ID       : beaa92fe852389cf1ba4f6bb611dd8ae
+    Parent ID      : aaaaa7bd52266f97
+    ID             : ef7c63fe0c6c81fa
+    Name           : charge-card
+    Kind           : Internal
+    Start time     : 2026-11-08 11:11:08.505201118 +0000 UTC
+    End time       : 2026-11-08 11:11:08.505280186 +0000 UTC
+    Status code    : Unset
+    Status message : 
+    DroppedAttributesCount: 0
+    DroppedEventsCount: 0
+    DroppedLinksCount: 0
+Attributes:
+     -> payment.amount: Int(120)
+Span #1
+    Trace ID       : beaa92fe852389cf1ba4f6bb611dd8ae
+    Parent ID      : 
+    ID             : aaaaa7bd52266f97
+    Name           : checkout
+    Kind           : Internal
+    Start time     : 2026-11-08 11:11:08.505095511 +0000 UTC
+    End time       : 2026-11-08 11:11:08.50532013 +0000 UTC
+    Status code    : Unset
+    Status message : 
+    DroppedAttributesCount: 0
+    DroppedEventsCount: 0
+    DroppedLinksCount: 0
+Attributes:
+     -> order.id: Str(A8-002)
+	{"resource": {"service.instance.id": "25a158a9-b696-4a9d-93b6-2462eba1a797", "service.name": "otelcol", "service.version": "0.164.0"}, "otelcol.component.id": "debug", "otelcol.component.kind": "exporter", "otelcol.signal": "traces"}
+2026-11-08T11:20:20.638Z	info	otelcol@v0.164.0/collector.go:476	Received signal from OS	{"resource": {"service.instance.id": "25a158a9-b696-4a9d-93b6-2462eba1a797", "service.name": "otelcol", "service.version": "0.164.0"}, "signal": "terminated"}
+2026-11-08T11:20:20.638Z	info	service@v0.164.0/service.go:294	Starting shutdown...	{"resource": {"service.instance.id": "25a158a9-b696-4a9d-93b6-2462eba1a797", "service.name": "otelcol", "service.version": "0.164.0"}}
+2026-11-08T11:20:20.639Z	info	extensions/extensions.go:72	Stopping extensions...	{"resource": {"service.instance.id": "25a158a9-b696-4a9d-93b6-2462eba1a797", "service.name": "otelcol", "service.version": "0.164.0"}}
+2026-11-08T11:20:20.639Z	info	service@v0.164.0/service.go:308	Shutdown complete.	{"resource": {"service.instance.id": "25a158a9-b696-4a9d-93b6-2462eba1a797", "service.name": "otelcol", "service.version": "0.164.0"}}
+2026-11-08T11:20:21.006Z	info	otelconftelemetry/tracer.go:47	Internal trace telemetry disabled	{"resource": {"service.instance.id": "9a9747e8-9b21-4ffe-97b0-3da646cc3349", "service.name": "otelcol", "service.version": "0.164.0"}}
+2026-11-08T11:20:21.008Z	info	service@v0.164.0/service.go:233	Starting otelcol...	{"resource": {"service.instance.id": "9a9747e8-9b21-4ffe-97b0-3da646cc3349", "service.name": "otelcol", "service.version": "0.164.0"}, "Version": "0.164.0", "NumCPU": 2}
+2026-11-08T11:20:21.008Z	info	extensions/extensions.go:43	Starting extensions...	{"resource": {"service.instance.id": "9a9747e8-9b21-4ffe-97b0-3da646cc3349", "service.name": "otelcol", "service.version": "0.164.0"}}
+2026-11-08T11:20:21.009Z	info	otlpreceiver@v0.164.0/otlp.go:120	Starting GRPC server	{"resource": {"service.instance.id": "9a9747e8-9b21-4ffe-97b0-3da646cc3349", "service.name": "otelcol", "service.version": "0.164.0"}, "otelcol.component.id": "otlp", "otelcol.component.kind": "receiver", "endpoint": "[::]:4317"}
+2026-11-08T11:20:21.009Z	info	service@v0.164.0/service.go:256	Everything is ready. Begin running and processing data.	{"resource": {"service.instance.id": "9a9747e8-9b21-4ffe-97b0-3da646cc3349", "service.name": "otelcol", "service.version": "0.164.0"}}
+2026-11-08T11:30:30.568Z	info	Logs	{"resource": {"service.instance.id": "9a9747e8-9b21-4ffe-97b0-3da646cc3349", "service.name": "otelcol", "service.version": "0.164.0"}, "otelcol.component.id": "debug", "otelcol.component.kind": "exporter", "otelcol.signal": "logs", "resource logs": 1, "log records": 1}
+2026-11-08T11:30:30.568Z	info	ResourceLog #0
+Resource SchemaURL: 
+Resource attributes:
+     -> telemetry.sdk.language: Str(python)
+     -> telemetry.sdk.name: Str(opentelemetry)
+     -> telemetry.sdk.version: Str(1.45.2)
+     -> service.instance.id: Str(9560c6e6-a5da-4766-8eaf-92fdae11f210)
+     -> service.name: Str(a8-flask)
+     -> telemetry.auto.version: Str(0.66b2)
+ScopeLogs #0
+ScopeLogs SchemaURL: 
+InstrumentationScope opentelemetry.instrumentation.logging 
+LogRecord #0
+ObservedTimestamp: 2026-11-08 11:30:29.839132523 +0000 UTC
+Timestamp: 2026-11-08 11:30:29.839038208 +0000 UTC
+SeverityText: WARN
+SeverityNumber: Warn(13)
+Body: Str(Skipping installation of LoggingHandler from `opentelemetry-instrumentation-logging` to avoid duplicate logs. The SDK's deprecated LoggingHandler is already active (OTEL_PYTHON_LOGGING_AUTO_INSTRUMENTATION_ENABLED=true). To migrate, unset this environment variable. The SDK's handler will be removed in a future release.)
+Attributes:
+     -> code.file.path: Str(/usr/local/python/3.14.2/lib/python3.14/site-packages/opentelemetry/instrumentation/logging/__init__.py)
+     -> code.function.name: Str(_instrument)
+     -> code.line.number: Int(215)
+Trace ID: 
+Span ID: 
+Flags: 0
+	{"resource": {"service.instance.id": "9a9747e8-9b21-4ffe-97b0-3da646cc3349", "service.name": "otelcol", "service.version": "0.164.0"}, "otelcol.component.id": "debug", "otelcol.component.kind": "exporter", "otelcol.signal": "logs"}
+2026-11-08T11:30:31.572Z	info	Logs	{"resource": {"service.instance.id": "9a9747e8-9b21-4ffe-97b0-3da646cc3349", "service.name": "otelcol", "service.version": "0.164.0"}, "otelcol.component.id": "debug", "otelcol.component.kind": "exporter", "otelcol.signal": "logs", "resource logs": 1, "log records": 2}
+2026-11-08T11:30:31.572Z	info	ResourceLog #0
+Resource SchemaURL: 
+Resource attributes:
+     -> telemetry.sdk.language: Str(python)
+     -> telemetry.sdk.name: Str(opentelemetry)
+     -> telemetry.sdk.version: Str(1.45.2)
+     -> service.instance.id: Str(9560c6e6-a5da-4766-8eaf-92fdae11f210)
+     -> service.name: Str(a8-flask)
+     -> telemetry.auto.version: Str(0.66b2)
+ScopeLogs #0
+ScopeLogs SchemaURL: 
+InstrumentationScope werkzeug 
+LogRecord #0
+ObservedTimestamp: 2026-11-08 11:30:30.970821781 +0000 UTC
+Timestamp: 2026-11-08 11:30:30.970709248 +0000 UTC
+SeverityText: INFO
+SeverityNumber: Info(9)
+Body: Str([31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8080)
+Attributes:
+     -> code.file.path: Str(/usr/local/python/3.14.2/lib/python3.14/site-packages/werkzeug/_internal.py)
+     -> code.function.name: Str(_log)
+     -> code.line.number: Int(97)
+Trace ID: 
+Span ID: 
+Flags: 0
+LogRecord #1
+ObservedTimestamp: 2026-11-08 11:30:30.972323182 +0000 UTC
+Timestamp: 2026-11-08 11:30:30.97228416 +0000 UTC
+SeverityText: INFO
+SeverityNumber: Info(9)
+Body: Str([33mPress CTRL+C to quit[0m)
+Attributes:
+     -> code.file.path: Str(/usr/local/python/3.14.2/lib/python3.14/site-packages/werkzeug/_internal.py)
+     -> code.function.name: Str(_log)
+     -> code.line.number: Int(97)
+Trace ID: 
+Span ID: 
+Flags: 0
+	{"resource": {"service.instance.id": "9a9747e8-9b21-4ffe-97b0-3da646cc3349", "service.name": "otelcol", "service.version": "0.164.0"}, "otelcol.component.id": "debug", "otelcol.component.kind": "exporter", "otelcol.signal": "logs"}
+2026-11-08T11:30:50.631Z	info	Logs	{"resource": {"service.instance.id": "9a9747e8-9b21-4ffe-97b0-3da646cc3349", "service.name": "otelcol", "service.version": "0.164.0"}, "otelcol.component.id": "debug", "otelcol.component.kind": "exporter", "otelcol.signal": "logs", "resource logs": 1, "log records": 2}
+2026-11-08T11:30:50.631Z	info	ResourceLog #0
+Resource SchemaURL: 
+Resource attributes:
+     -> telemetry.sdk.language: Str(python)
+     -> telemetry.sdk.name: Str(opentelemetry)
+     -> telemetry.sdk.version: Str(1.45.2)
+     -> service.instance.id: Str(9560c6e6-a5da-4766-8eaf-92fdae11f210)
+     -> service.name: Str(a8-flask)
+     -> telemetry.auto.version: Str(0.66b2)
+ScopeLogs #0
+ScopeLogs SchemaURL: 
+InstrumentationScope werkzeug 
+LogRecord #0
+ObservedTimestamp: 2026-11-08 11:30:49.889645327 +0000 UTC
+Timestamp: 2026-11-08 11:30:49.889605376 +0000 UTC
+SeverityText: INFO
+SeverityNumber: Info(9)
+Body: Str(127.0.0.1 - - [08/Nov/2026 11:30:49] "GET / HTTP/1.1" 200 -)
+Attributes:
+     -> code.file.path: Str(/usr/local/python/3.14.2/lib/python3.14/site-packages/werkzeug/_internal.py)
+     -> code.function.name: Str(_log)
+     -> code.line.number: Int(97)
+Trace ID: 
+Span ID: 
+Flags: 0
+LogRecord #1
+ObservedTimestamp: 2026-11-08 11:30:50.358859629 +0000 UTC
+Timestamp: 2026-11-08 11:30:50.358816256 +0000 UTC
+SeverityText: INFO
+SeverityNumber: Info(9)
+Body: Str(127.0.0.1 - - [08/Nov/2026 11:30:50] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -)
+Attributes:
+     -> code.file.path: Str(/usr/local/python/3.14.2/lib/python3.14/site-packages/werkzeug/_internal.py)
+     -> code.function.name: Str(_log)
+     -> code.line.number: Int(97)
+Trace ID: 
+Span ID: 
+Flags: 0
+	{"resource": {"service.instance.id": "9a9747e8-9b21-4ffe-97b0-3da646cc3349", "service.name": "otelcol", "service.version": "0.164.0"}, "otelcol.component.id": "debug", "otelcol.component.kind": "exporter", "otelcol.signal": "logs"}
+2026-11-08T11:30:54.637Z	info	Traces	{"resource": {"service.instance.id": "9a9747e8-9b21-4ffe-97b0-3da646cc3349", "service.name": "otelcol", "service.version": "0.164.0"}, "otelcol.component.id": "debug", "otelcol.component.kind": "exporter", "otelcol.signal": "traces", "resource spans": 1, "spans": 2}
+2026-11-08T11:30:54.637Z	info	ResourceSpans #0
+Resource SchemaURL: 
+Resource attributes:
+     -> telemetry.sdk.language: Str(python)
+     -> telemetry.sdk.name: Str(opentelemetry)
+     -> telemetry.sdk.version: Str(1.45.2)
+     -> service.instance.id: Str(9560c6e6-a5da-4766-8eaf-92fdae11f210)
+     -> service.name: Str(a8-flask)
+     -> telemetry.auto.version: Str(0.66b2)
+ScopeSpans #0
+ScopeSpans SchemaURL: https://opentelemetry.io/schemas/1.11.0
+InstrumentationScope opentelemetry.instrumentation.flask 0.66b2
+Span #0
+    Trace ID       : 581a52288080c31048f0794f95f040d3
+    Parent ID      : 
+    ID             : 404da46fc772f694
+    Name           : GET /
+    Kind           : Server
+    Start time     : 2026-11-08 11:30:49.888281493 +0000 UTC
+    End time       : 2026-11-08 11:30:49.889395 +0000 UTC
+    Status code    : Unset
+    Status message : 
+    DroppedAttributesCount: 0
+    DroppedEventsCount: 0
+    DroppedLinksCount: 0
+Attributes:
+     -> http.method: Str(GET)
+     -> http.server_name: Str(127.0.0.1)
+     -> http.scheme: Str(http)
+     -> net.host.name: Str(localhost:8080)
+     -> http.host: Str(localhost:8080)
+     -> net.host.port: Int(8080)
+     -> http.target: Str(/)
+     -> net.peer.ip: Str(127.0.0.1)
+     -> net.peer.port: Int(34792)
+     -> http.user_agent: Str(Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0)
+     -> http.flavor: Str(1.1)
+     -> http.route: Str(/)
+     -> http.status_code: Int(200)
+Span #1
+    Trace ID       : 90b2efee73adf1440a55e0b535676c3a
+    Parent ID      : 
+    ID             : 18f52ea5fd28d18b
+    Name           : GET /favicon.ico
+    Kind           : Server
+    Start time     : 2026-11-08 11:30:50.357835288 +0000 UTC
+    End time       : 2026-11-08 11:30:50.358639538 +0000 UTC
+    Status code    : Unset
+    Status message : 
+    DroppedAttributesCount: 0
+    DroppedEventsCount: 0
+    DroppedLinksCount: 0
+Attributes:
+     -> http.method: Str(GET)
+     -> http.server_name: Str(127.0.0.1)
+     -> http.scheme: Str(http)
+     -> net.host.name: Str(localhost:8080)
+     -> http.host: Str(localhost:8080)
+     -> net.host.port: Int(8080)
+     -> http.target: Str(/favicon.ico)
+     -> net.peer.ip: Str(127.0.0.1)
+     -> net.peer.port: Int(34808)
+     -> http.user_agent: Str(Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0)
+     -> http.flavor: Str(1.1)
+     -> http.status_code: Int(404)
+	{"resource": {"service.instance.id": "9a9747e8-9b21-4ffe-97b0-3da646cc3349", "service.name": "otelcol", "service.version": "0.164.0"}, "otelcol.component.id": "debug", "otelcol.component.kind": "exporter", "otelcol.signal": "traces"}
+2026-11-08T11:31:47.007Z	info	Logs	{"resource": {"service.instance.id": "9a9747e8-9b21-4ffe-97b0-3da646cc3349", "service.name": "otelcol", "service.version": "0.164.0"}, "otelcol.component.id": "debug", "otelcol.component.kind": "exporter", "otelcol.signal": "logs", "resource logs": 1, "log records": 3}
+2026-11-08T11:31:47.007Z	info	ResourceLog #0
+Resource SchemaURL: 
+Resource attributes:
+     -> telemetry.sdk.language: Str(python)
+     -> telemetry.sdk.name: Str(opentelemetry)
+     -> telemetry.sdk.version: Str(1.45.2)
+     -> service.instance.id: Str(f8f9b90c-1b51-40e2-8288-cc1198c9b899)
+     -> service.name: Str(a8-flask)
+     -> telemetry.auto.version: Str(0.66b2)
+ScopeLogs #0
+ScopeLogs SchemaURL: 
+InstrumentationScope opentelemetry.instrumentation.logging 
+LogRecord #0
+ObservedTimestamp: 2026-11-08 11:31:45.974566202 +0000 UTC
+Timestamp: 2026-11-08 11:31:45.9744576 +0000 UTC
+SeverityText: WARN
+SeverityNumber: Warn(13)
+Body: Str(Skipping installation of LoggingHandler from `opentelemetry-instrumentation-logging` to avoid duplicate logs. The SDK's deprecated LoggingHandler is already active (OTEL_PYTHON_LOGGING_AUTO_INSTRUMENTATION_ENABLED=true). To migrate, unset this environment variable. The SDK's handler will be removed in a future release.)
+Attributes:
+     -> code.file.path: Str(/usr/local/python/3.14.2/lib/python3.14/site-packages/opentelemetry/instrumentation/logging/__init__.py)
+     -> code.function.name: Str(_instrument)
+     -> code.line.number: Int(215)
+Trace ID: 
+Span ID: 
+Flags: 0
+ScopeLogs #1
+ScopeLogs SchemaURL: 
+InstrumentationScope werkzeug 
+LogRecord #0
+ObservedTimestamp: 2026-11-08 11:31:46.192536053 +0000 UTC
+Timestamp: 2026-11-08 11:31:46.192472064 +0000 UTC
+SeverityText: INFO
+SeverityNumber: Info(9)
+Body: Str([31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8080)
+Attributes:
+     -> code.file.path: Str(/usr/local/python/3.14.2/lib/python3.14/site-packages/werkzeug/_internal.py)
+     -> code.function.name: Str(_log)
+     -> code.line.number: Int(97)
+Trace ID: 
+Span ID: 
+Flags: 0
+LogRecord #1
+ObservedTimestamp: 2026-11-08 11:31:46.192702594 +0000 UTC
+Timestamp: 2026-11-08 11:31:46.192681984 +0000 UTC
+SeverityText: INFO
+SeverityNumber: Info(9)
+Body: Str([33mPress CTRL+C to quit[0m)
+Attributes:
+     -> code.file.path: Str(/usr/local/python/3.14.2/lib/python3.14/site-packages/werkzeug/_internal.py)
+     -> code.function.name: Str(_log)
+     -> code.line.number: Int(97)
+Trace ID: 
+Span ID: 
+Flags: 0
+	{"resource": {"service.instance.id": "9a9747e8-9b21-4ffe-97b0-3da646cc3349", "service.name": "otelcol", "service.version": "0.164.0"}, "otelcol.component.id": "debug", "otelcol.component.kind": "exporter", "otelcol.signal": "logs"}
+2026-11-08T11:33:54.993Z	info	Logs	{"resource": {"service.instance.id": "9a9747e8-9b21-4ffe-97b0-3da646cc3349", "service.name": "otelcol", "service.version": "0.164.0"}, "otelcol.component.id": "debug", "otelcol.component.kind": "exporter", "otelcol.signal": "logs", "resource logs": 1, "log records": 1}
+2026-11-08T11:33:54.993Z	info	ResourceLog #0
+Resource SchemaURL: 
+Resource attributes:
+     -> telemetry.sdk.language: Str(python)
+     -> telemetry.sdk.name: Str(opentelemetry)
+     -> telemetry.sdk.version: Str(1.45.2)
+     -> service.instance.id: Str(f8f9b90c-1b51-40e2-8288-cc1198c9b899)
+     -> service.name: Str(a8-flask)
+     -> telemetry.auto.version: Str(0.66b2)
+ScopeLogs #0
+ScopeLogs SchemaURL: 
+InstrumentationScope werkzeug 
+LogRecord #0
+ObservedTimestamp: 2026-11-08 11:33:54.688119616 +0000 UTC
+Timestamp: 2026-11-08 11:33:54.68807808 +0000 UTC
+SeverityText: INFO
+SeverityNumber: Info(9)
+Body: Str(127.0.0.1 - - [08/Nov/2026 11:33:54] "GET / HTTP/1.1" 200 -)
+Attributes:
+     -> code.file.path: Str(/usr/local/python/3.14.2/lib/python3.14/site-packages/werkzeug/_internal.py)
+     -> code.function.name: Str(_log)
+     -> code.line.number: Int(97)
+Trace ID: 
+Span ID: 
+Flags: 0
+	{"resource": {"service.instance.id": "9a9747e8-9b21-4ffe-97b0-3da646cc3349", "service.name": "otelcol", "service.version": "0.164.0"}, "otelcol.component.id": "debug", "otelcol.component.kind": "exporter", "otelcol.signal": "logs"}
+2026-11-08T11:33:55.985Z	info	Traces	{"resource": {"service.instance.id": "9a9747e8-9b21-4ffe-97b0-3da646cc3349", "service.name": "otelcol", "service.version": "0.164.0"}, "otelcol.component.id": "debug", "otelcol.component.kind": "exporter", "otelcol.signal": "traces", "resource spans": 1, "spans": 4}
+2026-11-08T11:33:55.985Z	info	ResourceSpans #0
+Resource SchemaURL: 
+Resource attributes:
+     -> telemetry.sdk.language: Str(python)
+     -> telemetry.sdk.name: Str(opentelemetry)
+     -> telemetry.sdk.version: Str(1.45.2)
+     -> service.instance.id: Str(f8f9b90c-1b51-40e2-8288-cc1198c9b899)
+     -> service.name: Str(a8-flask)
+     -> telemetry.auto.version: Str(0.66b2)
+ScopeSpans #0
+ScopeSpans SchemaURL: https://opentelemetry.io/schemas/1.11.0
+InstrumentationScope opentelemetry.instrumentation.flask 0.66b2
+Span #0
+    Trace ID       : e06b4a7cf6249b068753fff6b98e371f
+    Parent ID      : 
+    ID             : 3f7192a1d58a4cab
+    Name           : GET /
+    Kind           : Server
+    Start time     : 2026-11-08 11:33:54.686794113 +0000 UTC
+    End time       : 2026-11-08 11:33:54.687823624 +0000 UTC
+    Status code    : Unset
+    Status message : 
+    DroppedAttributesCount: 0
+    DroppedEventsCount: 0
+    DroppedLinksCount: 0
+Attributes:
+     -> http.method: Str(GET)
+     -> http.server_name: Str(127.0.0.1)
+     -> http.scheme: Str(http)
+     -> net.host.name: Str(localhost:8080)
+     -> http.host: Str(localhost:8080)
+     -> net.host.port: Int(8080)
+     -> http.target: Str(/)
+     -> net.peer.ip: Str(127.0.0.1)
+     -> net.peer.port: Int(55940)
+     -> http.user_agent: Str(curl/8.5.0)
+     -> http.flavor: Str(1.1)
+     -> http.route: Str(/)
+     -> http.status_code: Int(200)
+Span #1
+    Trace ID       : 469616cb2afbe207486ebf61de4fa5ad
+    Parent ID      : 
+    ID             : 9d5952843c2d0d6a
+    Name           : GET /checkout
+    Kind           : Server
+    Start time     : 2026-11-08 11:33:54.716152296 +0000 UTC
+    End time       : 2026-11-08 11:33:54.9172088 +0000 UTC
+    Status code    : Unset
+    Status message : 
+    DroppedAttributesCount: 0
+    DroppedEventsCount: 0
+    DroppedLinksCount: 0
+Attributes:
+     -> http.method: Str(GET)
+     -> http.server_name: Str(127.0.0.1)
+     -> http.scheme: Str(http)
+     -> net.host.name: Str(localhost:8080)
+     -> http.host: Str(localhost:8080)
+     -> net.host.port: Int(8080)
+     -> http.target: Str(/checkout)
+     -> net.peer.ip: Str(127.0.0.1)
+     -> net.peer.port: Int(55950)
+     -> http.user_agent: Str(curl/8.5.0)
+     -> http.flavor: Str(1.1)
+     -> http.route: Str(/checkout)
+     -> http.status_code: Int(200)
+Span #2
+    Trace ID       : 2578ace79193f10f19839c871c25ff96
+    Parent ID      : 
+    ID             : 1e1737b3542ff915
+    Name           : GET /error
+    Kind           : Server
+    Start time     : 2026-11-08 11:33:54.941900506 +0000 UTC
+    End time       : 2026-11-08 11:33:54.945175667 +0000 UTC
+    Status code    : Error
+    Status message : RuntimeError: deliberate failure for A8
+    DroppedAttributesCount: 0
+    DroppedEventsCount: 0
+    DroppedLinksCount: 0S
+Attributes:
+     -> http.method: Str(GET)
+     -> http.server_name: Str(127.0.0.1)
+     -> http.scheme: Str(http)
+     -> net.host.name: Str(localhost:8080)
+     -> http.host: Str(localhost:8080)
+     -> net.host.port: Int(8080)
+     -> http.target: Str(/error)
+     -> net.peer.ip: Str(127.0.0.1)
+     -> net.peer.port: Int(55958)
+     -> http.user_agent: Str(curl/8.5.0)
+     -> http.flavor: Str(1.1)
+     -> http.route: Str(/error)
+     -> http.status_code: Int(500)
+Events:
+SpanEvent #0
+     -> Name: exception
+     -> Timestamp: 2026-11-08 11:33:54.945157573 +0000 UTC
+     -> DroppedAttributesCount: 0
+     -> Attributes::
+          -> exception.type: Str(RuntimeError)
+          -> exception.message: Str(deliberate failure for A8)
+          -> exception.stacktrace: Str(Traceback (most recent call last):
+  File "/usr/local/python/3.14.2/lib/python3.14/site-packages/opentelemetry/trace/__init__.py", line 602, in use_span
+    yield span
+  File "/usr/local/python/3.14.2/lib/python3.14/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/python/3.14.2/lib/python3.14/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/python/3.14.2/lib/python3.14/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/python/3.14.2/lib/python3.14/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "/workspaces/otel-lab/web.py", line 24, in error
+    raise RuntimeError("deliberate failure for A8")
+RuntimeError: deliberate failure for A8
+)
+          -> exception.escaped: Str(False)
+ScopeSpans #1
+ScopeSpans SchemaURL: 
+InstrumentationScope a8.web 
+Span #0
+    Trace ID       : 469616cb2afbe207486ebf61de4fa5ad
+    Parent ID      : 9d5952843c2d0d6a
+    ID             : 2d1f21b45dfa4b94
+    Name           : charge-card
+    Kind           : Internal
+    Start time     : 2026-11-08 11:33:54.716698896 +0000 UTC
+    End time       : 2026-11-08 11:33:54.916792643 +0000 UTC
+    Status code    : Unset
+    Status message : 
+    DroppedAttributesCount: 0
+    DroppedEventsCount: 0
+    DroppedLinksCount: 0
+Attributes:
+     -> payment.amount: Int(120)
+	{"resource": {"service.instance.id": "9a9747e8-9b21-4ffe-97b0-3da646cc3349", "service.name": "otelcol", "service.version": "0.164.0"}, "otelcol.component.id": "debug", "otelcol.component.kind": "exporter", "otelcol.signal": "traces"}
+2026-11-08T11:33:55.996Z	info	Logs	{"resource": {"service.instance.id": "9a9747e8-9b21-4ffe-97b0-3da646cc3349", "service.name": "otelcol", "service.version": "0.164.0"}, "otelcol.component.id": "debug", "otelcol.component.kind": "exporter", "otelcol.signal": "logs", "resource logs": 1, "log records": 5}
+2026-11-08T11:33:55.996Z	info	ResourceLog #0
+Resource SchemaURL: 
+Resource attributes:
+     -> telemetry.sdk.language: Str(python)
+     -> telemetry.sdk.name: Str(opentelemetry)
+     -> telemetry.sdk.version: Str(1.45.2)
+     -> service.instance.id: Str(f8f9b90c-1b51-40e2-8288-cc1198c9b899)
+     -> service.name: Str(a8-flask)
+     -> telemetry.auto.version: Str(0.66b2)
+ScopeLogs #0
+ScopeLogs SchemaURL: 
+InstrumentationScope a8.web 
+LogRecord #0
+ObservedTimestamp: 2026-11-08 11:33:54.916925631 +0000 UTC
+Timestamp: 2026-11-08 11:33:54.916862464 +0000 UTC
+SeverityText: WARN
+SeverityNumber: Warn(13)
+Body: Str(checkout finished, amount=120)
+Attributes:
+     -> code.file.path: Str(/workspaces/otel-lab/web.py)
+     -> code.function.name: Str(checkout)
+     -> code.line.number: Int(18)
+Trace ID: 469616cb2afbe207486ebf61de4fa5ad
+Span ID: 9d5952843c2d0d6a
+Flags: 3
+LogRecord #1
+ObservedTimestamp: 2026-11-08 11:33:54.942335869 +0000 UTC
+Timestamp: 2026-11-08 11:33:54.942304768 +0000 UTC
+SeverityText: ERROR
+SeverityNumber: Error(17)
+Body: Str(about to fail on purpose)
+Attributes:
+     -> code.file.path: Str(/workspaces/otel-lab/web.py)
+     -> code.function.name: Str(error)
+     -> code.line.number: Int(23)
+Trace ID: 2578ace79193f10f19839c871c25ff96
+Span ID: 1e1737b3542ff915
+Flags: 3
+ScopeLogs #1
+ScopeLogs SchemaURL: 
+InstrumentationScope werkzeug 
+LogRecord #0
+ObservedTimestamp: 2026-11-08 11:33:54.917393795 +0000 UTC
+Timestamp: 2026-11-08 11:33:54.917369344 +0000 UTC
+SeverityText: INFO
+SeverityNumber: Info(9)
+Body: Str(127.0.0.1 - - [08/Nov/2026 11:33:54] "GET /checkout HTTP/1.1" 200 -)
+Attributes:
+     -> code.file.path: Str(/usr/local/python/3.14.2/lib/python3.14/site-packages/werkzeug/_internal.py)
+     -> code.function.name: Str(_log)
+     -> code.line.number: Int(97)
+Trace ID: 
+Span ID: 
+Flags: 0
+LogRecord #1
+ObservedTimestamp: 2026-11-08 11:33:54.945324254 +0000 UTC
+Timestamp: 2026-11-08 11:33:54.94530176 +0000 UTC
+SeverityText: INFO
+SeverityNumber: Info(9)
+Body: Str(127.0.0.1 - - [08/Nov/2026 11:33:54] "[35m[1mGET /error HTTP/1.1[0m" 500 -)
+Attributes:
+     -> code.file.path: Str(/usr/local/python/3.14.2/lib/python3.14/site-packages/werkzeug/_internal.py)
+     -> code.function.name: Str(_log)
+     -> code.line.number: Int(97)
+Trace ID: 
+Span ID: 
+Flags: 0
+ScopeLogs #2
+ScopeLogs SchemaURL: 
+InstrumentationScope web 
+LogRecord #0
+ObservedTimestamp: 2026-11-08 11:33:54.942486831 +0000 UTC
+Timestamp: 2026-11-08 11:33:54.942454272 +0000 UTC
+SeverityText: ERROR
+SeverityNumber: Error(17)
+Body: Str(Exception on /error [GET])
+Attributes:
+     -> code.file.path: Str(/usr/local/python/3.14.2/lib/python3.14/site-packages/flask/app.py)
+     -> code.function.name: Str(log_exception)
+     -> code.line.number: Int(875)
+     -> exception.type: Str(RuntimeError)
+     -> exception.message: Str(deliberate failure for A8)
+     -> exception.stacktrace: Str(Traceback (most recent call last):
+  File "/usr/local/python/3.14.2/lib/python3.14/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/python/3.14.2/lib/python3.14/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/python/3.14.2/lib/python3.14/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/python/3.14.2/lib/python3.14/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "/workspaces/otel-lab/web.py", line 24, in error
+    raise RuntimeError("deliberate failure for A8")
+RuntimeError: deliberate failure for A8
+)
+Trace ID: 2578ace79193f10f19839c871c25ff96
+Span ID: 1e1737b3542ff915
+Flags: 3
+	{"resource": {"service.instance.id": "9a9747e8-9b21-4ffe-97b0-3da646cc3349", "service.name": "otelcol", "service.version": "0.164.0"}, "otelcol.component.id": "debug", "otelcol.component.kind": "exporter", "otelcol.signal": "logs"}
